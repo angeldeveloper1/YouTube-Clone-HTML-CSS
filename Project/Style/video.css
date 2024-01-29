@@ -1,7 +1,8 @@
+    /* Thumbnail styles */
 .thumbnail{
   width: 100%;
 }
-
+    /* Video title styles */
 .video-title{
   margin-top:0;
   font-size:14px ;
@@ -9,18 +10,19 @@
   line-height: 20px;
   margin-bottom: 10px;
 }
-
+    /* Larger font size for video title on larger screens */
 @media(min-width: 1000px){
   .video-title{
     font-size: 16px;
     line-height: 24px;
   }
 }
-
+    /* Grid layout for video information */
 .video-info-grid{
   display: grid;
   grid-template-columns: 50px 1fr;
 }
+    /* Profile picture styles */
 .profile-picture{
   width: 36px;
   border-radius: 50px;
@@ -29,29 +31,30 @@
   margin-bottom:8px;
   position: relative;
 }
+    /* Margin and font size for video author and stats */
 .video-author, .video-stats{
   font-size: 12px;
   color: rgb(96,96,96);
 }
-
+    /* Larger font size for video author and stats on larger screens */
 @media(min-width: 1000px){
   .video-author,
    .video-stats{
     font-size: 14px;
   }
 }
-
+    /* Margin for video author */
 .video-author{
   margin-bottom: 4px;
 }
-
+    /* Grid layout for videos with responsive column count */
 .video-grid{
   display: grid ;
   grid-template-columns: 1fr 1fr 1fr ;
   column-gap: 16px;
   row-gap: 40px;
 }
-
+    /* Adjusting video grid columns for different screen sizes */
 @media (max-width: 1000px){
   .video-grid{
     grid-template-columns: 1fr 1fr;
@@ -75,7 +78,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
-
+    /* Styling for video duration time display */
 .video-time{
   font-size: 12px;
   font-weight: 500;
@@ -87,16 +90,17 @@
   bottom: 8px;
   right: 5px;
 }
-
+    /* Styling for video title link */
 .video-title-link{
   text-decoration: none;
   color: black;
 }
-
+    /* Container for profile picture with tooltip */
 .profile-picture-container{
   position:relative ;
   display: inline-block;
 }
+    /* Tooltip for channel information */
 .channel-tooltip{
   display: flex;
   background-color: white;
@@ -112,25 +116,25 @@
   pointer-events: none;
   transition: opacity 0.15s;
 }
-
+    /* Tooltip visibility on hover */
 .profile-picture-container:hover .channel-tooltip{
   opacity: 1;
 }
-
+    /* Channel tooltip picture styles */
 .channel-tooltip-picture{
   width:50px;
   height: 50px;
   border-radius: 50px;
   margin-right: 8px;
 }
-
+    /* Channel tooltip name styles */
 .channel-tooltip-name{
   font-family: Roboto, Arial;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 4px;
 }
-
+    /* Channel tooltip stats styles */
 .channel-tooltip-stats{
   color:rgb(96, 96, 96);
   font-size: 14px;
